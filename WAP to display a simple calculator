@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main ()
+{
+    int n, a , b , s , diff, p;
+    float divi;
+    char ch;
+    printf("enter two numbers:");
+    scanf("%d%d", &a,&b);
+    printf("enter a character:\n");
+    scanf(" %c", &ch);
+    switch(ch)
+    {
+        case '+': s= a+ b ;
+        printf("sum is %d", s);
+        break;
+        
+        case '-': diff = a - b;
+        printf("diff is %d ", diff);
+        break;
+        
+        case '*': p = a * b ;
+        printf(" product is %d", p);
+        break;
+        
+        case '/': divi = a/b ;
+        printf("division is %f", divi);
+        break;
+    }
+}
