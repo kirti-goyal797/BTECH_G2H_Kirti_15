@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int P, T;
+    float R,SI,CI;
+    printf(" enter principle value \n");
+    printf("enter time \n");
+    printf("enter rate \n");
+    scanf("%d%f%d", &P, &R,&T);
+    SI = (P*R*T)/100;
+    CI= P*pow((1+(R/100)),T);
+    printf("the value of CI %f\n", CI);
+    printf("the value of SI %f", SI);
+    return 0 ;
+}
