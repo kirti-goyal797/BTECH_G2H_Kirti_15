@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+   int i, n;
+    printf("enter the size of an array:");
+    scanf("%d",&n);
+    int a[n];
+    printf("enter array elements:");
+    for(i=0;i<n; i++)
+    {scanf("%d",&a[i]);
+    }
+    int b[n];
+    for(i=0;i<n;i++)
+    {
+        b[i]=a[i];
+    }
+    printf("above array is copied in array b\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\n",b[i]);
+    }
+
+}
