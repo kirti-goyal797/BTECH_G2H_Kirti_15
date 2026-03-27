@@ -3,7 +3,7 @@
 int main() {
     float s = 0.0 , avg;
     int n,i;
-    printf("enter series:\n");
+    printf("enter number of elements:\n");
     scanf("%d",&n);
     int arr[100];
     
