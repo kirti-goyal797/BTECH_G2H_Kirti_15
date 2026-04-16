@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int firstNum , secondNum , result;
+    char operator;
+    printf("Enter the first number:");
+    scanf("%d", &firstNum);
+    printf("Enter the second number:");
+    scanf("%d", &secondNum);
+    printf("Enter the operator:");
+    scanf(" %c", &operator);
+    switch(operator){
+        case'+':
+        result = firstNum + secondNum;
+        printf("Addition is %d", result);
+        break;
+        case'-':
+        result = firstNum - secondNum;
+        printf("subtraction is %d", result);
+        break;
+        case'*':
+        result = firstNum * secondNum;
+        printf("multiplication is %d", result);
+        break;
+        case'/':
+        float result;
+        result = (float)firstNum/secondNum;
+        printf("division is %f", result);
+        break;
+        default:
+        printf("OOPS! wrong choice");
+    }
+    return 0;
+}
